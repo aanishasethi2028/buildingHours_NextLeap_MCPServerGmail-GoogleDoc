@@ -1,0 +1,19 @@
+# Environments
+.venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Secrets
+client_secret.json
+credentials.json
+token.json
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
