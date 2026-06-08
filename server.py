@@ -19,6 +19,14 @@ class CreateEmailDraftRequest(BaseModel):
     body: str
 
 
+@app.get("/")
+def read_root():
+    return {
+        "status": "online",
+        "message": "Google MCP Server is running! Visit /docs for the API documentation."
+    }
+
+
 @app.post("/append_to_doc")
 async def append_to_doc_endpoint(req: AppendDocRequest):
     try:
